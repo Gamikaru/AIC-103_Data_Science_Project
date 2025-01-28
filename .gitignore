@@ -62,3 +62,90 @@ setup.cfg
 
 # Ignore temporary markdown files
 *.md~
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest
+.cache
+*.cover
+coverage.xml
+*.log
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+
+# Data files (keep raw data, ignore large intermediate files if necessary)
+# Uncomment if you want to ignore processed data
+# data/processed/
+# data/interim/
+
+# Reports and figures
+# Do NOT ignore reports and figures
+!reports/
+!reports/**/*.md
+!reports/**/*.png
+!reports/**/*.jpg
+!reports/**/*.jpeg
+!reports/**/*.pdf
+!reports/**/*.svg
+
+# Source code
+!aic_103_data_science_project/
+!aic_103_data_science_project/**/*.py
+
+# Notebooks
+!notebooks/
+!notebooks/**/*.ipynb
+
+# Documentation
+!docs/
+!docs/**/*.md
+
+# Site files
+!site/
+!site/**/*
