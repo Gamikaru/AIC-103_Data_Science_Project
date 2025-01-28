@@ -57,5 +57,32 @@ Data Science project analyzing elevator incident data
     └── plots.py                <- Code to create visualizations
 ```
 
---------
+# AIC-103 Data Science Project
+
+## Overview
+
+This project analyzes elevator incident data to derive actionable insights and recommendations. It encompasses data cleaning, visualization, reporting, and presenting findings to support data-driven decision-making.
+
+## Project Structure
+
+- **Data:** Raw and processed datasets.
+- **Notebooks:** Jupyter notebooks for data exploration and analysis.
+- **Src:** Source code for data processing, feature engineering, modeling, and visualization.
+- **Reports:** Generated reports and figures.
+- **Docs:** Project documentation built with MkDocs.
+
+## Getting Started
+
+### Prerequisites
+
+- [Conda](https://docs.conda.io/en/latest/) installed on your system.
+
+### Setup
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/AIC-103_Data_Science_Project.git
+   cd AIC-103_Data_Science_Project
+
 
