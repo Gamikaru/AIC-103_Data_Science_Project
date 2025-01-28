@@ -86,3 +86,26 @@ This project analyzes elevator incident data to derive actionable insights and r
    cd AIC-103_Data_Science_Project
 
 
+PLACEHOLDER CONTENT BELOW:
+   # AIC-103 Data Science Project
+
+## Overview
+Brief description of the project, its objectives, and key findings.
+
+## Project Structure
+Description of the project directories and their purposes.
+
+## Setup Instructions
+How to set up the project environment.
+
+## Usage
+Instructions on how to run the scripts and notebooks.
+
+## Contributing
+Guidelines for contributing to the project.
+
+## License
+Information about the project's license.
+
+
+
