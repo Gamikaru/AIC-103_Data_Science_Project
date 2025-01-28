@@ -1,0 +1,18 @@
+site_name: AIC-103 Data Science Project
+site_author: Gavriel Rudolph
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Project Structure: project_structure.md
+  - Data Exploration: data_exploration.md
+  - Data Reporting: data_reporting.md
+  - Presentation: presentation.md
+  - Deliverables: deliverables.md
+  - Getting Started: getting_started.md
+  - License: license.md
+
+repo_url: https://github.com/Gamikaru/AIC-103_Data_Science_Project
+repo_name: AIC-103_Data_Science_Project
+docs_dir: docs
