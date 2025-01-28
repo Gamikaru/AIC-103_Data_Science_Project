@@ -1,0 +1,64 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Ignore virtual environment & package dependencies
+venv/
+env/
+.etl_project/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore all data files except explicitly included processed files
+data/
+!data/processed/cleaned_license_data.csv
+!data/processed/merged_altered_data.csv
+!data/processed/merged_installed_data.csv
+
+# Ignore logs and temp files
+*.log
+*.out
+*.err
+*.bak
+*.tmp
+
+# Ignore environment & dependency files (handled externally)
+*.env
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Ignore documentation builds
+docs/_build/
+mkdocs.yml
+
+# Ignore hidden system files (MacOS & Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore reports and generated figures
+reports/
+reports/figures/
+
+# Ignore model checkpoints and large model artifacts
+models/
+
+# Ignore compiled files
+*.o
+*.obj
+*.exe
+*.dll
+
+# Ignore Makefile outputs
+*.d
+*.o
+
+# Ignore setup configurations
+setup.cfg
+pyproject.toml
+
+# Ignore temporary markdown files
+*.md~
