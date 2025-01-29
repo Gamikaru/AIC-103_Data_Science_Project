@@ -73,7 +73,12 @@ An analysis of the **`LocationoftheElevatingDevice`** column revealed that the m
 
 #### 3.1.3. Filtering Active Licenses
 
-Focusing on operational relevance, the dataset was filtered to include only records with a **`LICENSESTATUS`** of **ACTIVE**. This filtering ensures that subsequent analyses pertain solely to currently operational elevators, excluding those that are expired, canceled, or otherwise inactive. Post-filtering, all 42,625 records maintained an **ACTIVE** status, indicating no inactive records were present in the initial dataset.
+Focusing on operational relevance, the dataset was filtered to include only records with a **`LICENSESTATUS`** of **ACTIVE**. This filtering ensures that subsequent analyses pertain solely to currently operational elevators, excluding those that are expired, canceled, or otherwise inactive. Post-filtering, all 42,625 records maintained an **ACTIVE** status, indicating no inactive records were present in the initial dataset. See `Table 1` for evidence of inconsistencies in location data that were filtered or imputed.
+
+
+*![Missing Location Data](./figures/missing_location_data.png)*
+*Table 1: Examples of missing location data*
+
 
 #### 3.1.4. Verifying Uniqueness Post-Filtering
 
@@ -83,20 +88,15 @@ Post-filtering verification confirmed that **`ElevatingDevicesNumber`** remains 
 
 A time series analysis of **`LICENSEEXPIRYDATE`** was conducted to visualize the monthly count of license expirations. The analysis spanned from **November 2016** to **November 2017**, revealing fluctuations in expiration counts across different months. Notably, **December 2016** and **January 2017** exhibited higher expiration counts, peaking at **2,972** and **4,025** respectively. This trend analysis provides insights into renewal patterns and potential periods requiring heightened administrative attention.
 
-*![License Expiry Trends](../reports/figures/license_expiry_trends.png)*
+*![License Expiry Trends](./figures/license_expiry_timeseries.png)*
 *Figure 2: Monthly License Expirations*
 
 #### 3.1.6. Expirations by Year-Month
 
 A detailed table enumerating license expirations by **Year-Month** was created, displaying counts only for months with more than five expirations. This table underscores the temporal distribution of license renewals and expirations, facilitating targeted strategies for license management and forecasting future trends.
 
-| Year-Month | Expiration Count |
-|------------|-------------------|
-| 2016-12    | 2,972             |
-| 2017-01    | 4,025             |
-| ...        | ...               |
-| 2017-11    | 1,234             |
-
+*![License Expiry Trends](./figures/expiry_table_styled.png)*
+reports/figures/expiry_table_styled.png
 *Table 1: License Expirations by Year-Month*
 
 #### Key Takeaways

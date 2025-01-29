@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#project-structure" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -258,6 +263,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Project Structure
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -268,6 +286,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#directory-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directory Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -410,6 +465,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#directory-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directory Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -427,9 +510,136 @@
   
 
 
-  <h1>Project Structure</h1>
-
-
+<h1 id="project-structure">Project Structure</h1>
+<p>This section provides an overview of the project's directory layout and the purpose of each folder.</p>
+<h2 id="directory-overview">Directory Overview</h2>
+<p>.
+├── LICENSE
+├── Makefile
+├── README.md
+├── aic_103_data_science_project
+│   ├── <strong>init</strong>.py
+│   ├── config.py
+│   ├── dataset.py
+│   ├── features.py
+│   ├── modeling
+│   │   ├── <strong>init</strong>.py
+│   │   ├── predict.py
+│   │   └── train.py
+│   └── plots.py
+├── data
+│   ├── external
+│   ├── interim
+│   ├── processed
+│   │   ├── cleaned_license_data.csv
+│   │   ├── merged_altered_data.csv
+│   │   └── merged_installed_data.csv
+│   └── raw
+│       ├── altered.json
+│       ├── cleaned_license_data.csv
+│       ├── incident.json
+│       ├── inspection.csv
+│       ├── installed.json
+│       ├── license.csv
+│       ├── merged_altered_data.csv
+│       ├── merged_installed_data.csv
+│       └── order.csv
+├── docs
+│   ├── data_exploration.md
+│   ├── data_reporting.md
+│   ├── deliverables.md
+│   ├── getting-started.md
+│   ├── getting_started.md
+│   ├── index.md
+│   ├── license.md
+│   ├── overview.md
+│   ├── presentation.md
+│   └── project_structure.md
+├── environment.yml
+├── mkdocs.yml
+├── models
+├── notebooks
+│   ├── altered-ETL.ipynb
+│   ├── inspections-ETL.ipynb
+│   ├── installed-ETL.ipynb
+│   └── licence-ETL.ipynb
+├── pyproject.toml
+├── references
+├── reports
+│   └── figures
+├── setup.cfg
+├── site
+│   ├── 404.html
+│   ├── assets
+│   │   ├── images
+│   │   │   └── favicon.png
+│   │   ├── javascripts
+│   │   │   ├── bundle.60a45f97.min.js
+│   │   │   ├── bundle.60a45f97.min.js.map
+│   │   │   ├── lunr
+│   │   │   │   ├── min
+│   │   │   │   │   ├── lunr.ar.min.js
+│   │   │   │   │   ├── lunr.da.min.js
+│   │   │   │   │   ├── lunr.de.min.js
+│   │   │   │   │   ├── lunr.du.min.js
+│   │   │   │   │   ├── lunr.el.min.js
+│   │   │   │   │   ├── lunr.es.min.js
+│   │   │   │   │   ├── lunr.fi.min.js
+│   │   │   │   │   ├── lunr.fr.min.js
+│   │   │   │   │   ├── lunr.he.min.js
+│   │   │   │   │   ├── lunr.hi.min.js
+│   │   │   │   │   ├── lunr.hu.min.js
+│   │   │   │   │   ├── lunr.hy.min.js
+│   │   │   │   │   ├── lunr.it.min.js
+│   │   │   │   │   ├── lunr.ja.min.js
+│   │   │   │   │   ├── lunr.jp.min.js
+│   │   │   │   │   ├── lunr.kn.min.js
+│   │   │   │   │   ├── lunr.ko.min.js
+│   │   │   │   │   ├── lunr.multi.min.js
+│   │   │   │   │   ├── lunr.nl.min.js
+│   │   │   │   │   ├── lunr.no.min.js
+│   │   │   │   │   ├── lunr.pt.min.js
+│   │   │   │   │   ├── lunr.ro.min.js
+│   │   │   │   │   ├── lunr.ru.min.js
+│   │   │   │   │   ├── lunr.sa.min.js
+│   │   │   │   │   ├── lunr.stemmer.support.min.js
+│   │   │   │   │   ├── lunr.sv.min.js
+│   │   │   │   │   ├── lunr.ta.min.js
+│   │   │   │   │   ├── lunr.te.min.js
+│   │   │   │   │   ├── lunr.th.min.js
+│   │   │   │   │   ├── lunr.tr.min.js
+│   │   │   │   │   ├── lunr.vi.min.js
+│   │   │   │   │   └── lunr.zh.min.js
+│   │   │   │   ├── tinyseg.js
+│   │   │   │   └── wordcut.js
+│   │   │   └── workers
+│   │   │       ├── search.f8cc74c7.min.js
+│   │   │       └── search.f8cc74c7.min.js.map
+│   │   └── stylesheets
+│   │       ├── main.a40c8224.min.css
+│   │       ├── main.a40c8224.min.css.map
+│   │       ├── palette.06af60db.min.css
+│   │       └── palette.06af60db.min.css.map
+│   ├── getting-started
+│   │   └── index.html
+│   ├── index.html
+│   ├── overview
+│   │   └── index.html
+│   ├── search
+│   │   └── search_index.json
+│   ├── sitemap.xml
+│   └── sitemap.xml.gz
+└── untitled.md</p>
+<h2 id="folder-descriptions">Folder Descriptions</h2>
+<ul>
+<li><strong><code>data/</code></strong>: Contains all data files, organized into <code>raw</code>, <code>processed</code>, <code>interim</code>, and <code>external</code> subdirectories.</li>
+<li><strong><code>notebooks/</code></strong>: Jupyter notebooks for data exploration and analysis.</li>
+<li><strong><code>aic_103_data_science_project/</code></strong>: Source code modules for data processing, feature engineering, modeling, and visualization.</li>
+<li><strong><code>docs/</code></strong>: Project documentation built with MkDocs.</li>
+<li><strong><code>models/</code></strong>: Trained and serialized models.</li>
+<li><strong><code>reports/</code></strong>: Generated analysis reports and figures.</li>
+<li><strong><code>references/</code></strong>: Data dictionaries, manuals, and other explanatory materials.</li>
+</ul>
 
 
 
